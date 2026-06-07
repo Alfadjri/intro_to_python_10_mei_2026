@@ -4,7 +4,7 @@
 class Hewan:
     nama_hewan = "default"
     jenis_hewan = "default"
-    _asdwasdwasdwaa= 10 
+    _usia_hewan= 10 
 
     # constructor
     def __init__(self,nama,jenis):
@@ -15,19 +15,20 @@ class Hewan:
         print("Hewan sedang makan")
     # Set and get
     def get_usia(self):
-        return self._asdwasdwasdwaa
+        return self._usia_hewan
     
     def set_usia(self,umur):
-        self._asdwasdwasdwaa = umur
+        self._usia_hewan = umur
+    
+    def get_profile(self):
+        return f"{self.nama_hewan} adalah {self.jenis_hewan} yang berusia {self._usia_hewan} tahun"
 
 
 
 kucing = Hewan("Tom","Anggora")
-print(f"Nama\t: {kucing.nama_hewan}")
-print(f"Jenis\t: {kucing.jenis_hewan}")
-print(f"Usia\t: {kucing.get_usia()}")
+print(kucing.get_profile())
 print("Kegiatan Hewan : ")
 kucing.makan()
 print("Update value")
 kucing.set_usia(20)
-print(f"Usia\t: {kucing.get_usia()}")
+print(kucing.get_profile())
