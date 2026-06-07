@@ -8,7 +8,6 @@ def main():
         Employee("Charlie", 40, "M001"),
         Employee("David", 28, "E004"),
         Manager("Charlie", 40, "M001", "IT", 4)
-
     ]
     # Print information about employees and manager
     for karyawan in data_karyawan:

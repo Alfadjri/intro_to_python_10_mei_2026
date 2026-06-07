@@ -1,0 +1,6 @@
+create_file = open("./data_kariwan.txt", "w")
+create_file.write("Alice,30,E001\n")
+create_file.write("Bob,25,E002\n")
+create_file.write("Charlie,40,M001,IT,4\n")
+create_file.write("David,28,E004\n")
+create_file.close()
